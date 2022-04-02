@@ -1,0 +1,182 @@
+:root {
+	--Black: #000000;
+	--White: #FFFFFF;
+	--Timberwolf: #E9DFD6;
+	--Gunmetal: #272E3E;
+	--Big-Dip-Oruby: #9A0036;
+}
+
+* {
+	position: relative;
+	/* border: 1px solid var(--Black); */
+	box-sizing: border-box;
+	font-family: "Microsoft JhengHei";
+}
+
+html, body {
+	margin: 0; padding: 0;
+	width: 100%; height: 100%;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	left: 0; top: 0;
+	display: inline-block;
+	width: 100%; height: 100%;
+	background-image: url("../images/background.jpeg");
+	background-size: cover;
+	filter: opacity(.4);
+}
+
+form .form-check-input:checked {
+	background-color: var(--Big-Dip-Oruby);
+	border-color: var(--Big-Dip-Oruby);
+}
+
+form .form-check-input:focus {
+	outline: none;
+	border: none;
+	box-shadow: none;
+}
+
+form .form-check-label {
+	letter-spacing: 2px;
+}
+
+.container .card {
+	height: 400px;
+	min-height: 400px;
+	user-select: none;
+	overflow: hidden;
+}
+
+.container .row .col-md-3 {
+	min-width: 300px;
+}
+
+/* Front */
+.container .front .card-img-top {
+	background-color: var(--Timberwolf);
+	height: 60%;
+	min-height: 280px;
+}
+
+/* Front image */
+.container .front .card-img-top .center {
+	top: 50%;
+	transform: translateY(-50%);
+	min-width: 124px;
+}
+
+.container .front .card-img-top .center .company {
+	color: var(--Big-Dip-Oruby);
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 0 var(--White);
+	font-size: 1.4rem;
+}
+
+.container .front .card .line {
+	display: inline-block;
+	width: 50%; height: 20px;
+	background-color: var(--Gunmetal);
+
+	position: absolute;
+	right: 0; top: 0;
+	transform: translateY(-50%);
+}
+
+/* Front bottom */
+.container .front .card .name {
+	letter-spacing: 3px;
+}
+
+.container .front .card .position {
+	letter-spacing: 2px;
+}
+
+/* Back */
+.container .back .card-top {
+	height: 33.3333%;
+	min-height: 120px;
+}
+
+.container .back .card-title {
+	color: var(--Big-Dip-Oruby);
+	letter-spacing: 4px;
+	display: inline-block;
+	padding: 1rem;
+}
+
+.container .back .card-title span {
+	font-size: 10px !important;
+}
+
+.container .back .card-body {
+	height: 60%;
+	min-height: 280px;
+	padding-top: 40%;
+	background-color: var(--Timberwolf);
+	color: var(--Gunmetal);
+}
+
+/* Back image */
+.container .back .company-img {
+	background-color: rgba(39, 26, 62, .3);
+	background-image: url("../images/company.png");
+	background-size: cover;
+	background-position: center -20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 50%; height: 125px;
+	transform: translateY(50%);
+	overflow: hidden;
+	border-radius: 4px;
+	position: absolute;
+	right: 0;
+	z-index: 3;
+}
+
+.container .back .circle {
+	display: inline-block;
+	width: 150px; height: 150px;
+	border-radius: 50%;
+	position: absolute;
+	right: -75px; top: calc(50% - 10px);
+	background-color: var(--Big-Dip-Oruby);
+	z-index: 1;
+}
+
+/* Back detail */
+.container .back .card-body .d-flex i,
+.container .back .card-body .d-flex .col-md-10 {
+	color: var(--Gunmetal);
+}
+
+.container .back .card-body .d-flex .col-md-10 {
+	letter-spacing: 1px;
+}
+
+/* RWD */
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 600px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		padding: 1px;
+	}
+
+	.container .row .front {
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.container .row .front {
+		padding-right: 0.75rem;
+		margin-bottom: 1rem;
+	}
+}

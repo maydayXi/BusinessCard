@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Business Card</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/Bootstrap/5.14/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/FontAwesome/V6/style/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand fw-bolder">
+	    	Wei's Business Card
+	    </a>
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavbarLinks" aria-controls="NavbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="NavbarLinks">
+	      <form class="d-flex ms-auto justify-content-center">
+	      	<div class="form-check form-switch">
+	      		<input type="checkbox" id="Language" class="form-check-input" role="switch">
+	      	</div>
+	      	<span class="form-check-label text-white fw-bolder">EN</span>
+	      </form>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="container mt-5">
+		<div class="row justify-content-sm-center justify-content-center">
+			<div class="col-md-3 offset-md-1 col-sm-4 col-6 front">
+				<div class="card d-flex flex-column shadow rounded">
+					<div class="card-img-top text-center">
+						<div class="center">
+							<img src="images/logo.png" alt="Logo">
+							<p id="Company" class="company fw-bold">臺灣銀行股份有限公司</p>
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="line"></div>
+						<h2 id="Name" class="name fw-bold text-center mt-3">
+							魏宗熙
+						</h2>
+						<p id="Position" class="position text-center">初級辦事員</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4 col-6 back">
+				<div class="card d-flex	flex-column shadow rounded">
+					<div class="card-top">
+						<h5 id="Department" class="card-title fw-bold">
+							<i class="fa-solid fa-building fa-xl"></i>
+							資訊處
+						</h5>
+						<div class="company-img"></div>
+						<div class="circle"></div>
+					</div>
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-12 d-flex pb-1">
+								<div class="col-md-2 col-sm-2 col-2 text-center">
+									<i class="fa-solid fa-phone"></i>	
+								</div>
+								<div class="col-md-10">
+									02-8590-5643						
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 d-flex pb-1">
+								<div class="col-md-2 col-sm-2 col-2 text-center">
+									<i class="fa-solid fa-location-dot"></i>
+								</div>
+								<div id="Address" class="col-md-10">
+									103臺北市大同區承德路二段208號
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 d-flex">
+								<div class="col-md-2 col-sm-2 col-2 text-center">
+									<i class="fa-solid fa-house"></i>
+								</div>
+								<div class="col-md-10">
+									https://www.bot.com.tw/
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jQuery/3.6.0/jquery-3.6.0.min.js"></script>
+	<!-- Bootstarp -->
+	<script type="text/javascript" src="js/Bootstrap/5.14/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
